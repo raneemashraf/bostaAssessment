@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F88F8E92D7329F70024F6FA /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 7F88F8E82D7329F70024F6FA /* SDWebImage */; };
+		7F88F8EB2D7329F70024F6FA /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7F88F8EA2D7329F70024F6FA /* SDWebImageMapKit */; };
 		7F954BDA2D52AD370022247C /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 7F954BD92D52AD370022247C /* Moya */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +42,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F88F8E92D7329F70024F6FA /* SDWebImage in Frameworks */,
+				7F88F8EB2D7329F70024F6FA /* SDWebImageMapKit in Frameworks */,
 				7F954BDA2D52AD370022247C /* Moya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,6 +88,8 @@
 			name = BostaAlbums;
 			packageProductDependencies = (
 				7F954BD92D52AD370022247C /* Moya */,
+				7F88F8E82D7329F70024F6FA /* SDWebImage */,
+				7F88F8EA2D7329F70024F6FA /* SDWebImageMapKit */,
 			);
 			productName = BostaAlbums;
 			productReference = 7F954BC02D52A64B0022247C /* BostaAlbums.app */;
@@ -115,6 +121,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				7F954BD82D52AD370022247C /* XCRemoteSwiftPackageReference "Moya" */,
+				7F88F8E72D7329F70024F6FA /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 7F954BC12D52A64B0022247C /* Products */;
@@ -348,6 +355,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		7F88F8E72D7329F70024F6FA /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.21.0;
+			};
+		};
 		7F954BD82D52AD370022247C /* XCRemoteSwiftPackageReference "Moya" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Moya/Moya.git";
@@ -359,6 +374,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		7F88F8E82D7329F70024F6FA /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7F88F8E72D7329F70024F6FA /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		7F88F8EA2D7329F70024F6FA /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7F88F8E72D7329F70024F6FA /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
 		7F954BD92D52AD370022247C /* Moya */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 7F954BD82D52AD370022247C /* XCRemoteSwiftPackageReference "Moya" */;
